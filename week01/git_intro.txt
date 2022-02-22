@@ -7,4 +7,4 @@ git status
 git config user.name "Alex"
 git config user.email "alexverebik123@gmail.com"
 git clone git@github.com:AxEHuN/Programozas1.git
-
+git add "file név"
