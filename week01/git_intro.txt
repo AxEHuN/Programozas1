@@ -4,4 +4,5 @@ git commit
 git diff
 git log
 git status 
-
+git config user.name "Alex"
+git config user.email "alexverebik123@gmail.com"
