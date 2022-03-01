@@ -28,6 +28,7 @@ class B1
 		{
 			cout << "D1/f()" <<endl;
 		}
+		void pvf() {cout << "valami d1" << endl;}
 
 	};
 
@@ -45,7 +46,7 @@ class B1
 		virtual void pvf() = 0;
 	};
 
-	class D21 : B2
+	class D21 : public B2
 	{
 		string s = "valami string";
 	public:
@@ -56,29 +57,25 @@ class B1
 		}
 	};
 
-	/*class D22 : B2
+	class D22 : public B2
 	{
 	int number = 69;
 	public:
 	void pvf() override
 		{
-			cout << number << end;
+			cout << number << endl;
 		}
 	};
-	*/
-	/*void f(B2& j)
+	
+	void f(B2& j)
 	{
 		j.pvf();
-	}*/
+	}
 	
 
 int main()
 {
  	
- 	B1 valami;
- 	valami.vf();
- 	valami.f();
-
  	cout << endl;
 
  	D1 masvalami;
@@ -87,24 +84,23 @@ int main()
 
  	cout << endl;
 
- 	/* B1& x {masvalami};
+ 	B1& x {masvalami};
  	x.vf();
  	x.f();
-	*/ //Nem jó!
 
 	cout << endl;
-/*
+	
 	D2 y;
 	y.vf();
 	y.f();
 	y.pvf();	
-	*/
+	
 	cout << endl;
 
-	//D21 to;
-	//D22 tt;
-	//f(to);
-	//f(tt);
+	D21 to;
+	D22 tt;
+	f(to);
+	f(tt);
 
 
 
